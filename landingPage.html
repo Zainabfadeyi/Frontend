@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            background-color: #333;
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 60px;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        /* .hero {
+            padding: 4rem 2rem;
+            background-color: #f4f4f4;
+            border-radius: 8px;
+        } */
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="style.css"/>
+<body>
+    <!-- Static Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>We're here to <span class="wave-underline">Increase</span> your Productivity</h1>
+      <p>Let's make your work more organize and easily using the Taskio Dashboard with many of the latest features in managing work every day.</p>
+      <div class="hero-btns">
+        <a href="#" class="btn-primary">Try free trial</a>
+        <a href="#" class="demo-btn">
+          <div class="play-icon">
+            <svg width="14" height="16" viewBox="0 0 14 16" fill="none">
+              <path d="M1 1l12 7L1 15V1z" fill="#191a15"/>
+            </svg>
+          </div>
+          View Demo
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+   
+      <div class="deco-sq purple"></div>
+      <div class="deco-sq yellow"></div>
+
+      
+      <div class="hero-card-main">
+        <img src="./image/Frame 46.png" alt="Dashboard user"/>
+      </div>
+
+      <div class="float-widget payment">
+        <div>
+        <div class="fw-label">Enter amount</div>
+        <div class="fw-amount">$450..00</div>
+        </div>
+        <div>
+          <span class="fw-send">Send</span>
+        </div>
+        <div class="fw-divider"></div>
+      </div>
+
+      <div class="float-widget income" style="bottom:60px;left:25px;top:auto;">
+        <div class="fw-label">Total Income</div>
+        <div class="fw-amount">
+          <span>$245.00</span>
+         
+        </div>
+      </div>
+
+      <div style="position:absolute;right:-80px;top:220px;background:#161c28;border-radius:10px;width:146px;height:188px;transform:rotate(15deg);overflow:hidden;box-shadow:0 4px 4px rgba(0,0,0,.25);padding:10px 10px">
+        <div style="font-size:12px;color:#e6e6e6;margin-top:52px">Credit Card</div>
+        <div style="display:flex;align-items:center;gap:4px;margin-top:6px">
+          <div style="width:4px;height:4px;background:#e6e6e6;border-radius:50%"></div>
+          <div style="width:4px;height:4px;background:#e6e6e6;border-radius:50%"></div>
+          <div style="width:4px;height:4px;background:#e6e6e6;border-radius:50%"></div>
+          <span style="font-size:12px;color:#f0f0ef;margin-left:8px">1234</span>
+        </div>
+        <div style="margin-top:28px;display:flex;align-items:center;justify-content:space-between">
+          <div style="background:rgba(255,255,255,.2);width:34px;height:22px;border-radius:4px"></div>
+          <span style="font-size:12px;color:#f8f8fa">09/25</span>
+        </div>
+      </div>
+
+      <div class="deco-sq orange" style="bottom:0;right:-20px"></div>
+    </div>
+  </div>
+</section>
+
+
+<section class="companies">
+  <h2>More than 25,000 teams use Collabs</h2>
+  <div class="logo-strip">
+    <div class="logo-item">
+      <div class="logo-icon" style="background:#a6a6a6;border-radius:3px">
+        <!-- <svg width="16" height="16" viewBox="0 0 16 16"><rect x="2" y="2" width="5" height="5" fill="#fff"/><rect x="2" y="9" width="5" height="5" fill="#fff"/><rect x="9" y="5" width="5" height="5" fill="#fff"/></svg> -->
+      </div>
+      <span>Unsplash</span>
+    </div>
+    <div class="logo-item">
+      <div style="width:30px;height:30px;border:2px solid #a6a6a6;border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:16px;font-weight:700;color:#a6a6a6">N</div>
+      <span>Notion</span>
+    </div>
+    <div class="logo-item">
+      <div class="logo-icon" style="border-radius:50%;background:#a6a6a6">
+        <!-- <svg width="16" height="16" viewBox="0 0 16 16"><circle cx="8" cy="8" r="3" fill="#fff"/></svg> -->
+      </div>
+      <span>INTERCOM</span>
+    </div>
+    <div class="logo-item">
+      <div style="font-size:28px;font-weight:700;color:#a6a6a6;line-height:1">◈</div>
+      <span>descript</span>
+    </div>
+    <div class="logo-item">
+      <div style="width:30px;height:30px;background:#a6a6a6;border-radius:50%;display:flex;align-items:center;justify-content:center">
+        <!-- <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L9.5 5.5H13L10 8.5L11 13L7 10.5L3 13L4 8.5L1 5.5H4.5L7 1Z" fill="#fff"/></svg>
+       -->
+    </div>
+      <span>grammarly</span>
+    </div>
+  </div>
+</section>
+
+
+<section class="support">
+  <div class="support-inner">
+    <div class="support-left">
+      <h2>How we support our partner all over the world</h2>
+      <p>SaaS become a common delivery model for many business application, including office software, messaging software, payroll processing software, DBMS software, management software</p>
+      <div class="ratings">
+        <div class="rating-item">
+          <div class="stars">★★★★★</div>
+          <div class="rating-val">4.9 <span>/ </span><span class="medium">5 rating</span></div>
+          <div class="rating-source gray">databricks</div>
+        </div>
+        <div class="rating-item">
+          <div class="stars">★★★★★</div>
+          <div class="rating-val">4.8 <span>/ </span><span class="medium">5 rating</span></div>
+          <div class="rating-source gray">Chainalysis</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="support-right">
+      <div class="support-feature">
+        <div class="feat-icon-box">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#54bd95" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+        </div>
+        <div class="feat-content">
+          <h3>Publishing</h3>
+          <p>Plan, collaborate, and publish your content that drives meaningful engagement and growth for your brand</p>
+        </div>
+      </div>
+      <div class="support-feature">
+        <div class="feat-icon-box">
+          <!-- <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#54bd95" stroke-width="2"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+         -->
+        </div>
+        <div class="feat-content">
+          <h3>Analytics</h3>
+          <p>Analyze your performance and create gorgeous reports</p>
+        </div>
+      </div>
+      <div class="support-feature">
+        <div class="feat-icon-box">
+
+        </div>
+        <div class="feat-content">
+          <h3>Engagement</h3>
+          <p>Quickly navigate and engage with your audience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features">
+  <div class="features-header">
+    <div class="features-header-left">
+      <h2>Our Features you can get</h2>
+    </div>
+    <div class="features-header-right">
+      <p>We offer a variety of interesting features that can help increase your productivity at work and manage your projects easily</p>
+      <a href="#" class="btn-primary" style="border-radius:70px;padding:18px 36px">Get Started</a>
+    </div>
+  </div>
+
+  <div class="feature-cards">
+    <div class="feat-card">
+    
+      <div style="padding:20px 22px 0;position:relative;height:260px;overflow:hidden">
+        <div style="background:#e9effc;border-radius:10px;position:absolute;top:20px;left:20px;right:20px;bottom:0"></div>
+        <div style="background:#f5fafa;position:absolute;top:38px;left:38px;right:14px;bottom:0"></div>
+        
+        <div style="position:relative;z-index:1;padding:8px 10px">
+          <div style="display:flex;gap:16px;align-items:flex-start;margin-bottom:16px">
+            <div style="width:63px;height:90px;background:#54bd95;border-radius:2px;flex-shrink:0"></div>
+            <div style="display:flex;flex-direction:column;gap:10px;flex:1;padding-top:4px">
+              <div style="background:#dbe5fa;height:15px;border-radius:4px"></div>
+              <div style="background:#dbe5fa;height:15px;border-radius:4px;width:90%"></div>
+              <div style="background:#dbe5fa;height:15px;border-radius:4px;width:80%"></div>
+              <div style="background:#dbe5fa;height:15px;border-radius:4px;width:70%"></div>
+            </div>
+          </div>
+          <div style="display:flex;gap:16px;align-items:flex-start">
+            <div style="width:63px;height:90px;background:#0f8ce9;border-radius:2px;flex-shrink:0"></div>
+            <div style="display:flex;flex-direction:column;gap:10px;flex:1;padding-top:4px">
+              <div style="background:#dbe5fa;height:15px;border-radius:4px"></div>
+              <div style="background:#dbe5fa;height:15px;border-radius:4px;width:90%"></div>
+              <div style="background:#dbe5fa;height:15px;border-radius:4px;width:80%"></div>
+              <div style="background:#dbe5fa;height:15px;border-radius:4px;width:70%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feat-card-body" style="padding:20px 20px 20px">
+        <h3>Collaboration Teams</h3>
+        <p>Here you can handle projects together with team virtually</p>
+      </div>
+    </div>
+
+   
+    <div class="feat-card">
+      <div style="position:relative;height:260px;overflow:hidden">
+        <div style="background:#e9effc;border-radius:10px;position:absolute;top:20px;left:20px;right:20px;bottom:0"></div>
+        <div style="background:#f5fafa;position:absolute;top:38px;left:38px;right:14px;bottom:0"></div>
+        <div style="position:relative;z-index:1;margin:10px">
+          <div style="background:#54bd95;border-radius:10px;padding:20px;overflow:hidden;position:relative;margin:10px">
+            <div style="background:#fee900;border-radius:10px;width:42px;height:42px;margin-bottom:16px;display:flex;align-items:center;justify-content:center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#54bd95" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+            </div>
+            <div style="font-size:22px;font-weight:500;color:#fff">Document File</div>
+            <div style="font-size:14px;font-weight:500;color:rgba(255,255,255,.85);margin-top:4px">456 GB | 1056 Items</div>
+          </div>
+          <!-- Mini file items -->
+          <div style="margin:8px 10px 0;display:flex;flex-direction:column;gap:6px">
+            <div style="background:#fff;border-radius:6px;padding:6px 10px;display:flex;align-items:center;gap:8px;box-shadow:0 2px 6px rgba(0,0,0,.06)">
+              <div style="width:28px;height:28px;background:#dbe5fa;border-radius:6px"></div>
+              <div style="flex:1">
+                <div style="background:#dbe5fa;height:8px;border-radius:4px;width:80%;margin-bottom:4px"></div>
+                <div style="background:#dbe5fa;height:6px;border-radius:4px;width:50%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feat-card-body">
+        <h3>Cloud Storage</h3>
+        <p>No need to worry about storage because we provide storage up to 2 TB</p>
+      </div>
+    </div>
+
+    
+    <div class="feat-card">
+      <div style="position:relative;height:260px;overflow:hidden">
+        <div style="background:#e9effc;border-radius:10px;position:absolute;top:20px;left:20px;right:20px;bottom:0"></div>
+        <div style="background:#f5fafa;position:absolute;top:38px;left:38px;right:14px;bottom:0"></div>
+        <div style="position:relative;z-index:1;padding:16px">
+          <!-- Donut chart placeholder -->
+          <div style="display:flex;justify-content:center;margin-bottom:12px">
+            <div style="width:130px;height:130px;border-radius:50%;background:conic-gradient(#54bd95 0% 60%,#0f8ce9 60% 100%);display:flex;align-items:center;justify-content:center">
+              <div style="width:70px;height:70px;background:#f5fafa;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center">
+                <div style="font-size:11px;font-weight:500;color:#191a15">60%</div>
+              </div>
+            </div>
+          </div>
+          <!-- Progress bars -->
+          <div style="background:#fff;border-radius:10px;padding:10px;border:1px solid #eff2f7">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px">
+              <div style="width:40px;height:40px;background:#fff;border-radius:6px;box-shadow:0 2px 6px rgba(0,0,0,.06)"></div>
+              <div style="flex:1">
+                <div style="background:#dbe5fa;height:8px;border-radius:4px;width:80%;margin-bottom:6px"></div>
+                <div style="background:#dbe5fa;height:8px;border-radius:4px;width:50%"></div>
+                <div style="position:relative;margin-top:6px">
+                  <div style="background:#dbe5fa;height:8px;border-radius:4px"></div>
+                  <div style="background:#54bd95;height:8px;border-radius:4px;width:72%;position:absolute;top:0"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feat-card-body">
+        <h3>Daily Analytics</h3>
+        <p>We always provide useful information to make it easier for you every day</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="benefits-left">
+    <h2>What Benefit Will You Get</h2>
+    <div class="benefit-list">
+      <div class="benefit-item">
+        <div class="benefit-check"><svg width="16" height="16" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <p>Free Consulting With Expert Saving Money</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-check"><svg width="16" height="16" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <p>Online Banking</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-check"><svg width="16" height="16" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <p>Investment Report Every Month</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-check"><svg width="16" height="16" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <p>Saving Money For The Future</p>
+      </div>
+      <div class="benefit-item">
+        <div class="benefit-check"><svg width="16" height="16" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div>
+        <p>Online Transaction</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="benefits-right">
+    <!-- Floating deco square -->
+    <div class="benefit-deco"></div>
+    <!-- Profile float -->
+    <div class="benefit-float profile">
+      <img src="./image/97a62f40-b21f-4282-bac4-90079a7c1630.png" alt="Amanda Young" class="profile-avatar"/>
+      <div>
+        <div class="profile-name">Amanda Young</div>
+        <div class="profile-role">Expert Saving Money</div>
+      </div>
+      <div style="margin-left:auto;width:40px;height:40px;background:#54bd95;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </div>
+    </div>
+
+    <img src="./image/851964f5-6615-4e10-b7f8-a8f6b29163b9.png" alt="Benefits visual" class="benefit-img"/>
+
+    <div class="benefit-float income2">
+      <div style="font-size:12px;color:#a9a7b6;margin-bottom:4px">Total Income</div>
+      <div style="font-size:16px;font-weight:500;color:#191a15;display:flex;align-items:center;justify-content:space-between">
+        <span>$245.00</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#54bd95" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+      </div>
+    </div>
+    <div class="benefit-float transfer">
+      <div class="transfer-check">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <span style="font-size:18px;color:#191a15;font-weight:400">Money Transfer Successful</span>
+    </div>
+  </div>
+</section>
+
+<section class="pricing">
+  <div class="pricing-header">
+    <h2>Choose Plan<br>That's Right For You</h2>
+    <p>Choose plan that works best for you, feel free to contact us</p>
+  </div>
+  <div class="billing-toggle">
+    <span>Bil Monthly</span>
+    <span class="active">Bil Yearly</span>
+  </div>
+  <div class="pricing-cards">
+    <!-- Free -->
+    <div class="price-card">
+      <div class="price-card-top" style="text-align:center">
+        <div class="price-name">Free</div>
+        <div class="price-desc">Have a go and test your superpowers</div>
+        <div class="price-amount">
+          <span class="price-currency">$</span>
+          <span class="price-number">0</span>
+        </div>
+      </div>
+      <div class="price-features-box">
+        <div class="price-feature"><div class="pf-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div><p>2 Users</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>2 Files</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Public Share &amp; Comments</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Chat Support</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>New income apps</p></div>
+      </div>
+      <div class="price-btn-wrap">
+        <button class="price-btn outline">Signup for free</button>
+      </div>
+    </div>
+
+    <!-- Pro (featured) -->
+    <div class="price-card pro">
+      <div class="price-card-top" style="text-align:center">
+        <div class="price-name">Pro</div>
+        <div class="price-desc">Experiment the power of infinite possibilities</div>
+        <div class="price-amount">
+          <span class="price-currency">$</span>
+          <span class="price-number">8</span>
+        </div>
+        <div class="price-save-badge">Save $50 a year</div>
+      </div>
+      <div class="price-features-box" style="margin:0 20px 20px">
+        <div class="price-feature"><div class="pf-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div><p>4 Users</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>All apps</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Unlimited editable exports</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Folders and collaboration</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>All incoming apps</p></div>
+      </div>
+      <div class="price-btn-wrap">
+        <button class="price-btn filled">Go to pro</button>
+      </div>
+    </div>
+
+    <!-- Business -->
+    <div class="price-card">
+      <div class="price-card-top" style="text-align:center">
+        <div class="price-name">Business</div>
+        <div class="price-desc">Unveil new superpowers and join the Design League</div>
+        <div class="price-amount">
+          <span class="price-currency">$</span>
+          <span class="price-number">16</span>
+        </div>
+      </div>
+      <div class="price-features-box">
+        <div class="price-feature"><div class="pf-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none"><polyline points="20 6 9 17 4 12"/></svg></div><p>All the features of pro plan</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Account success Manager</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Single Sign-On (SSO)</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Co-conception program</p></div>
+        <div class="price-feature"><div class="pf-check gray-check"><svg width="14" height="14" viewBox="0 0 24 24" stroke-width="3" fill="none" stroke="#9ca3af"><polyline points="20 6 9 17 4 12"/></svg></div><p>Collaboration – Soon</p></div>
+      </div>
+      <div class="price-btn-wrap">
+        <button class="price-btn outline">Goto Business</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ TESTIMONIALS + FORM ══════════ -->
+<section class="testimonials">
+  <div class="testi-left">
+    <h2>People are Saying About DoWhith</h2>
+    <p>Everything you need to accept payment and grow your money and manage anywhere on planet</p>
+    <div class="quote-icon">"</div>
+    <p class="testi-text">I am very helped by this E-wallet application, my days are very easy to use this application and it's very helpful in my life, even I can pay in a short time 😍</p>
+    <p class="testi-author">_ Aria Zinanrio</p>
+    <div class="testi-avatars">
+      <img src="./image/47523220-2206-44f9-bed1-04ab618b8538.png" alt="User 1" class="testi-avatar"/>
+      <img src="./image/cafd1bdf-b090-41b4-80dd-12f88da437fe.png" alt="User 2" class="testi-avatar"/>
+      <img src="./image/3dc2d4d8-062f-4bb2-9889-1c4726b42980.png" alt="User 3" class="testi-avatar"/>
+      <img src="./image/9beb0b3c-f473-42f8-94d9-3edd81473323.png" alt="User 4" class="testi-avatar"/>
+      <div style="width:66px;height:66px;border-radius:50%;background:#2a3347;display:flex;align-items:center;justify-content:center;font-size:22px;color:#a6a6a6">+</div>
+    </div>
+  </div>
+
+  <div class="contact-form-card">
+    <div class="form-logo">✦</div>
+    <div class="form-title">Get Started</div>
+    <div class="form-group">
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email"/>
+    </div>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea placeholder="What are you saying?"></textarea>
+    </div>
+    <button class="form-submit">Request Demo</button>
+    <p class="form-hint">or <span>Start Free Trial</span></p>
+  </div>
+</section>
+
+<!--FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text">Biccas</div>
+      <p>Get started now try our product</p>
+      <div class="email-form">
+        <input type="email" placeholder="Enter your email here"/>
+        <button>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <div class="footer-col">
+      <h4>Support</h4>
+      <ul>
+        <li><a href="#">Help centre</a></li>
+        <li><a href="#">Account information</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Help and Solution</h4>
+      <ul>
+        <li><a href="#">Talk to support</a></li>
+        <li><a href="#">Support docs</a></li>
+        <li><a href="#">System status</a></li>
+        <li><a href="#">Covid response</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Product</h4>
+      <ul>
+        <li><a href="#">Update</a></li>
+        <li><a href="#">Security</a></li>
+        <li><a href="#">Beta test</a></li>
+        <li><a href="#">Pricing product</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2022 Biccas Inc. Copyright and rights reserved</p>
+    <div style="display:flex;align-items:center;gap:0">
+      <a href="#">Terms and Conditions</a>
+      <span class="sep"></span>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Billing toggle
+  document.querySelectorAll('.billing-toggle span').forEach(btn=>{
+    btn.addEventListener('click',()=>{
+      document.querySelectorAll('.billing-toggle span').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+    });
+  });
+</script>
+</body>
+</body>
+</html>
