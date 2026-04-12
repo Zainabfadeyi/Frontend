@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="calc-wrap">
+    <div class="calculator">
+      <div class="display">
+        <div class="display-expr" id="expr"></div>
+        <div class="display-main" id="screen">0</div>
+      </div>
+
+      <div class="btn-grid">
+        <button class="btn btn-fn" onclick="calcFn('clear')">C</button>
+        <button class="btn btn-fn" onclick="calcFn('sign')">+/−</button>
+        <button class="btn btn-fn" onclick="calcFn('percent')">%</button>
+        <button class="btn btn-op" onclick="calcFn('op','/')">÷</button>
+
+        <button class="btn btn-num" onclick="calcFn('num','7')">7</button>
+        <button class="btn btn-num" onclick="calcFn('num','8')">8</button>
+        <button class="btn btn-num" onclick="calcFn('num','9')">9</button>
+        <button class="btn btn-op" onclick="calcFn('op','*')">×</button>
+
+        <button class="btn btn-num" onclick="calcFn('num','4')">4</button>
+        <button class="btn btn-num" onclick="calcFn('num','5')">5</button>
+        <button class="btn btn-num" onclick="calcFn('num','6')">6</button>
+        <button class="btn btn-op" onclick="calcFn('op','-')">−</button>
+
+        <button class="btn btn-num" onclick="calcFn('num','1')">1</button>
+        <button class="btn btn-num" onclick="calcFn('num','2')">2</button>
+        <button class="btn btn-num" onclick="calcFn('num','3')">3</button>
+        <button class="btn btn-op" onclick="calcFn('op','+')">+</button>
+
+        <button class="btn btn-num btn-zero" onclick="calcFn('num','0')">0</button>
+        <button class="btn btn-num" onclick="calcFn('dot')">.</button>
+        <button class="btn btn-eq" onclick="calcFn('eq')">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
